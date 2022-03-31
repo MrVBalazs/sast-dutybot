@@ -1,0 +1,34 @@
+{
+    "SQL": {
+        "host": "",
+        "username": "",
+        "password": "",
+        "database": "",
+        "table": ""
+    },
+    "bot": {
+        "TOKEN": "",
+        "server": ""
+    },
+    "api": {
+        "host": "",
+        "port": "",
+        "path": ""
+    },
+    "apiUSM": {
+        "host": "",
+        "port": "",
+        "path": ""
+    },
+    "channels": {
+        "info": "",
+        "stat": "",
+        "log": "",
+        "usm": {
+            "info": "",
+            "stat": "",
+            "log": ""
+        }
+    },
+    "roles": []
+}
