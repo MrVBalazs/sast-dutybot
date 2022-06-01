@@ -8,12 +8,12 @@ module.exports = {
         .setDescription(description)
         .setTimestamp()
     },
-    StatusEmbed (induty, outofduty) {
+    StatusEmbed (job, induty, outofduty) {
         return new MessageEmbed()
             .setColor("LUMINOUS_VIVID_PINK")
-            .setTitle("S.A.S.T - Városban lévő állománytagok")
+            .setTitle(`${job} - Városban lévő állománytagok`)
             .setDescription(`Szolgálatban lévő állománytagok: ${induty.split("\n").length}\nSzolgálaton kívüli állománytagok: ${outofduty.split("\n").length}`)
-            .setThumbnail('https://i.imgur.com/p2A79Y0.png')
+            .setThumbnail(job == "S.A.S.T" ? 'https://i.imgur.com/p2A79Y0.png' : "https://i.imgur.com/lX7dwaC.png")
             .setTimestamp()
             .addFields(
                 { name: "Szolgálatban lévők:", value: induty, inline: true },

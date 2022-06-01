@@ -31,7 +31,7 @@ function getPoliceJSONUSM() {
             });
         });
         request.on('error', function(e) {
-            console.log(e.message)
+            console.log("hiba: " + e.message)
         });
         request.end();
     })
