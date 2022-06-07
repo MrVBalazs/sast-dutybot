@@ -6,6 +6,3 @@ login()
 con.connect(function(err) {
     if(err) throw err
 })
-
-var d = new Date();
-console.log(d.getTime()/1000)
